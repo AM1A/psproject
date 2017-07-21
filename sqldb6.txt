@@ -1,0 +1,160 @@
+create table sinfo
+(
+ref_id integer primary key not null,
+name varchar(255),
+fname varchar(255),
+dob date,
+sex varchar(10),
+address varchar(255)
+);
+
+create table tuit_fee
+(
+	ref_id int primary key not null,
+	status varchar(10),
+	amount int not null,
+);
+
+create table hostel_fee
+(
+	ref_id int primary key not null,
+	status varchar(10),
+	amount int not null
+);
+
+create table trans_fee
+(
+	ref_id int primary key not null,
+	status varchar(10),
+	amount int not null
+);
+
+insert into sinfo values(0,'Adam','Ben','14-10-3','male','1-a,street-32,sector 18');
+insert into sinfo values(1,'Bert','Charlie','11-08-30','male','2-a,street-32,sector 18');
+insert into sinfo values(2,'Carol','Dirk','10-06-24','female','3-a,street-32,sector 18');
+insert into sinfo values(3,'Dan','Eric','09-07-14','male','4-a,street-32,sector 18');
+insert into sinfo values(4,'Elena','Fred','07-04-6','female','5-a,street-32,sector 18');
+insert into sinfo values(5,'Fisher','George','08-01-4','male','6-a,street-32,sector 18');
+insert into sinfo values(6,'Gavin','Henry','01-02-8','male','7-a,street-32,sector 18');
+insert into sinfo values(7,'Harold','Ingrid','02-04-16','male','8-a,street-32,sector 18');
+insert into sinfo values(8,'Irfan','Jordan','04-05-9','male','9-a,street-32,sector 18');
+insert into sinfo values(9,'James','Klaus','11-06-5','male','10-a,street-32,sector 18');
+insert into sinfo values(10,'Kelly','Lance','12-04-11','female','11-a,street-32,sector 18');
+insert into sinfo values(11,'Laura','Michael','10-02-12','female','12-a,street-32,sector 18');
+insert into sinfo values(12,'Manny','Ned','06-03-19','male','13-a,street-32,sector 18');
+insert into sinfo values(13,'Nash','Ogden','05-07-17','male','14-a,street-32,sector 18');
+insert into sinfo values(14,'Orwell','Peter','04-12-18','male','15-a,street-32,sector 18');
+insert into sinfo values(15,'Paul','Quiver','03-11-7','male','16-a,street-32,sector 18');
+insert into sinfo values(16,'Quiney','Rob','02-10-15','male','17-a,street-32,sector 18');
+insert into sinfo values(17,'Rich','Steve','02-05-28','male','18-a,street-32,sector 18');
+insert into sinfo values(18,'Stuart','Trevor','09-08-31','male','19-a,street-32,sector 18');
+insert into sinfo values(19,'Ted','Ulrich','14-12-29','male','20-a,street-32,sector 18');
+insert into sinfo values(20,'Udemy','Vince','08-04-2','female','21-a,street-32,sector 18');
+insert into sinfo values(21,'Victor','Will','02-09-24','male','22-a,street-32,sector 18');
+insert into sinfo values(22,'Wendy','Xander','05-06-27','female','23-a,street-32,sector 18');
+insert into sinfo values(23,'Xavier','Yuri','04-11-20','male','24-a,street-32,sector 18');
+insert into sinfo values(24,'Yves','Zachary','10-05-12','male','25-a,street-32,sector 18');
+
+insert into hostel_fee values(0,'paid',1902);
+insert into hostel_fee values(1,'unpaid',1407);
+insert into hostel_fee values(2,'paid',1478);
+insert into hostel_fee values(3,'unpaid',1603);
+insert into hostel_fee values(4,'paid',1706);
+insert into hostel_fee values(5,'paid',1585);
+insert into hostel_fee values(6,'paid',1976);
+insert into hostel_fee values(7,'unpaid',1737);
+insert into hostel_fee values(8,'paid',1438);
+insert into hostel_fee values(9,'unpaid',1909);
+insert into hostel_fee values(10,'paid',1680);
+insert into hostel_fee values(11,'unpaid',1821);
+insert into hostel_fee values(12,'paid',1682);
+insert into hostel_fee values(13,'unpaid',1468);
+insert into hostel_fee values(14,'paid',1208);
+insert into hostel_fee values(15,'unpaid',1524);
+insert into hostel_fee values(16,'paid',1748);
+insert into hostel_fee values(17,'unpaid',1627);
+insert into hostel_fee values(18,'unpaid',1758);
+insert into hostel_fee values(19,'unpaid',1545);
+insert into hostel_fee values(20,'paid',1450);
+insert into hostel_fee values(21,'unpaid',1628);
+insert into hostel_fee values(22,'paid',1746);
+insert into hostel_fee values(23,'unpaid',1896);
+insert into hostel_fee values(24,'paid',1674);
+
+insert into trans_fee values(0,'unpaid',1801);
+insert into trans_fee values(1,'paid',2403);
+insert into trans_fee values(2,'unpaid',2305);
+insert into trans_fee values(3,'paid',2203);
+insert into trans_fee values(4,'unpaid',2104);
+insert into trans_fee values(5,'paid',1605);
+insert into trans_fee values(6,'unpaid',1506);
+insert into trans_fee values(7,'paid',1807);
+insert into trans_fee values(8,'unpaid',1908);
+insert into trans_fee values(9,'paid',2109);
+insert into trans_fee values(10,'unpaid',2010);
+insert into trans_fee values(11,'paid',1511);
+insert into trans_fee values(12,'unpaid',1612);
+insert into trans_fee values(13,'paid',1718);
+insert into trans_fee values(14,'unpaid',1514);
+insert into trans_fee values(15,'paid',1915);
+insert into trans_fee values(16,'unpaid',2116);
+insert into trans_fee values(17,'paid',2017);
+insert into trans_fee values(18,'unpaid',2518);
+insert into trans_fee values(19,'paid',2119);
+insert into trans_fee values(20,'unpaid',2420);
+insert into trans_fee values(21,'paid',1621);
+insert into trans_fee values(22,'unpaid',1722);
+insert into trans_fee values(23,'paid',1923);
+insert into trans_fee values(24,'unpaid',1624);
+
+insert into sship values(0,482,'no');
+insert into sship values(1,590,'no');
+insert into sship values(2,456,'no');
+insert into sship values(3,534,'no');
+insert into sship values(4,468,'no');
+insert into sship values(5,504,'no');
+insert into sship values(6,414,'no');
+insert into sship values(7,590,'no');
+insert into sship values(8,498,'no');
+insert into sship values(9,506,'no');
+insert into sship values(10,424,'no');
+insert into sship values(11,512,'no');
+insert into sship values(12,448,'no');
+insert into sship values(13,508,'no');
+insert into sship values(14,542,'no');
+insert into sship values(15,564,'no');
+insert into sship values(16,434,'no');
+insert into sship values(17,506,'no');
+insert into sship values(18,512,'no');
+insert into sship values(19,442,'no');
+insert into sship values(20,484,'no');
+insert into sship values(21,422,'no');
+insert into sship values(22,478,'no');
+insert into sship values(23,528,'no');
+insert into sship values(24,492,'no');
+
+insert into tuit_fee values(0,'unpaid',4402);
+insert into tuit_fee values(1,'paid',2505);
+insert into tuit_fee values(2,'unpaid',3403);
+insert into tuit_fee values(3,'paid',3507);
+insert into tuit_fee values(4,'unpaid',4401);
+insert into tuit_fee values(5,'paid',1505);
+insert into tuit_fee values(6,'unpaid',2406);
+insert into tuit_fee values(7,'paid',4509);
+insert into tuit_fee values(8,'unpaid',3408);
+insert into tuit_fee values(9,'paid',2509);
+insert into tuit_fee values(10,'unpaid',5410);
+insert into tuit_fee values(11,'paid',2406);
+insert into tuit_fee values(12,'unpaid',1412);
+insert into tuit_fee values(13,'paid',3678);
+insert into tuit_fee values(14,'unpaid',1414);
+insert into tuit_fee values(15,'paid',1608);
+insert into tuit_fee values(16,'unpaid',1416);
+insert into tuit_fee values(17,'paid',3802);
+insert into tuit_fee values(18,'unpaid',2868);
+insert into tuit_fee values(19,'paid',2386);
+insert into tuit_fee values(20,'unpaid',1920);
+insert into tuit_fee values(21,'paid',3521);
+insert into tuit_fee values(22,'unpaid',1422);
+insert into tuit_fee values(23,'paid',2547);
+insert into tuit_fee values(24,'unpaid',5424);

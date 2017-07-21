@@ -1,0 +1,85 @@
+create table pinfo
+(
+ref_id integer primary key not null,
+name varchar(255),
+fname varchar(255),
+dob date,
+sex varchar(10),
+address varchar(255)
+);
+
+insert into pinfo values(0,'a','b','12-12-12','male','8-f,street-32,sector 15');
+
+create table electricity_bill
+(
+ref_id integer primary key not null,
+status varchar(20),
+amount integer
+);
+
+insert into electricity_bill values(0,'paid',2300);
+
+create table township_house_bill
+(
+ref_id integer primary key not null,
+status varchar(20),
+amount integer
+);
+
+insert into township_house_bill values(0,'paid',2300);
+
+create table water_bill
+(
+ref_id integer primary key not null,
+status varchar(20),
+amount integer
+);
+
+insert into water_bill values(0,'paid',2300);
+
+create table hospital_bill
+(
+ref_id integer primary key not null,
+status varchar(20),
+amount integer
+);
+
+insert into hospital_bill values(0,'paid',2300);
+
+create table gas_bill
+(
+ref_id integer primary key not null,
+status varchar(20),
+amount integer
+);
+
+
+insert into gas_bill values(0,'paid',2300);
+
+select 'electricity' as BILLTYPE,e.status as STATUS,e.amount as AMOUNT 
+from electricity_bill e,pinfo p
+where e.ref_id = p.ref_id;
+
+select 'township' as BILLTYPE,e.status as STATUS,e.amount as AMOUNT 
+from township_house_bill e,pinfo p
+where e.ref_id = p.ref_id;
+
+select 'water' as BILLTYPE,e.status as STATUS,e.amount as AMOUNT 
+from water_bill e,pinfo p
+where e.ref_id = p.ref_id;
+
+select 'hospital' as BILLTYPE,e.status as STATUS,e.amount as AMOUNT 
+from hospital_bill e,pinfo p
+where e.ref_id = p.ref_id;
+
+
+select 'gas' as BILLTYPE,e.status as STATUS,e.amount as AMOUNT 
+from gas_bill e,pinfo p
+where e.ref_id = p.ref_id;
+
+
+
+
+
+
+ 

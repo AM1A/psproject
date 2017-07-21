@@ -1,0 +1,135 @@
+create table hb_visit
+(
+	ref_id integer primary key not null,
+	status varchar(20),
+	amount integer
+);
+
+create table hb_medicine
+(
+	ref_id integer primary key not null,
+	status varchar(20),
+	amount integer
+);
+
+create table hb_surgery
+(
+	ref_id integer primary key not null,
+	status varchar(20),
+	amount integer
+);
+
+create table hb_benefit
+(
+	ref_id integer primary key not null,
+	status varchar(20),
+	amount integer
+);
+
+insert into hb_visit values(0,'paid',1400);
+insert into hb_visit values(1,'unpaid',1501);
+insert into hb_visit values(2,'paid',1402);
+insert into hb_visit values(3,'unpaid',1503);
+insert into hb_visit values(4,'paid',1404);
+insert into hb_visit values(5,'paid',1505);
+insert into hb_visit values(6,'paid',1406);
+insert into hb_visit values(7,'unpaid',1507);
+insert into hb_visit values(8,'paid',1408);
+insert into hb_visit values(9,'unpaid',1509);
+insert into hb_visit values(10,'paid',1410);
+insert into hb_visit values(11,'unpaid',1511);
+insert into hb_visit values(12,'paid',1412);
+insert into hb_visit values(13,'unpaid',1513);
+insert into hb_visit values(14,'paid',1414);
+insert into hb_visit values(15,'unpaid',1515);
+insert into hb_visit values(16,'paid',1416);
+insert into hb_visit values(17,'unpaid',1517);
+insert into hb_visit values(18,'unpaid',1418);
+insert into hb_visit values(19,'unpaid',1519);
+insert into hb_visit values(20,'paid',1420);
+insert into hb_visit values(21,'unpaid',1521);
+insert into hb_visit values(22,'paid',1422);
+insert into hb_visit values(23,'unpaid',1523);
+insert into hb_visit values(24,'paid',1424);
+
+insert into hb_medicine values(0,'unpaid',1400);
+insert into hb_medicine values(1,'paid',1501);
+insert into hb_medicine values(2,'unpaid',1402);
+insert into hb_medicine values(3,'paid',1503);
+insert into hb_medicine values(4,'unpaid',1404);
+insert into hb_medicine values(5,'paid',1505);
+insert into hb_medicine values(6,'unpaid',1406);
+insert into hb_medicine values(7,'paid',1507);
+insert into hb_medicine values(8,'unpaid',1408);
+insert into hb_medicine values(9,'paid',1509);
+insert into hb_medicine values(10,'unpaid',1410);
+insert into hb_medicine values(11,'paid',1511);
+insert into hb_medicine values(12,'unpaid',1412);
+insert into hb_medicine values(13,'paid',1513);
+insert into hb_medicine values(14,'unpaid',1414);
+insert into hb_medicine values(15,'paid',1515);
+insert into hb_medicine values(16,'unpaid',1416);
+insert into hb_medicine values(17,'paid',1517);
+insert into hb_medicine values(18,'unpaid',1418);
+insert into hb_medicine values(19,'paid',1519);
+insert into hb_medicine values(20,'unpaid',1420);
+insert into hb_medicine values(21,'paid',1521);
+insert into hb_medicine values(22,'unpaid',1422);
+insert into hb_medicine values(23,'paid',1523);
+insert into hb_medicine values(24,'unpaid',1424);
+
+insert into hb_surgery values(0,'unpaid',1400);
+insert into hb_surgery values(1,'paid',1501);
+insert into hb_surgery values(2,'paid',1402);
+insert into hb_surgery values(3,'unpaid',1503);
+insert into hb_surgery values(4,'paid',1404);
+insert into hb_surgery values(5,'paid',1505);
+insert into hb_surgery values(6,'unpaid',1406);
+insert into hb_surgery values(7,'paid',1507);
+insert into hb_surgery values(8,'paid',1408);
+insert into hb_surgery values(9,'unpaid',1509);
+insert into hb_surgery values(10,'paid',1410);
+insert into hb_surgery values(11,'paid',1511);
+insert into hb_surgery values(12,'unpaid',1412);
+insert into hb_surgery values(13,'paid',1513);
+insert into hb_surgery values(14,'paid',1414);
+insert into hb_surgery values(15,'unpaid',1515);
+insert into hb_surgery values(16,'paid',1416);
+insert into hb_surgery values(17,'paid',1517);
+insert into hb_surgery values(18,'unpaid',1418);
+insert into hb_surgery values(19,'paid',1519);
+insert into hb_surgery values(20,'paid',1420);
+insert into hb_surgery values(21,'unpaid',1521);
+insert into hb_surgery values(22,'paid',1422);
+insert into hb_surgery values(23,'paid',1523);
+insert into hb_surgery values(24,'unpaid',1424);
+
+insert into hb_benefit values(0,'unpaid',-1400);
+insert into hb_benefit values(1,'paid',-1501);
+insert into hb_benefit values(2,'paid',-1402);
+insert into hb_benefit values(3,'paid',-1503);
+insert into hb_benefit values(4,'paid',-1404);
+insert into hb_benefit values(5,'paid',-1505);
+insert into hb_benefit values(6,'paid',-1406);
+insert into hb_benefit values(7,'paid',-1507);
+insert into hb_benefit values(8,'paid',-1408);
+insert into hb_benefit values(9,'paid',-1509);
+insert into hb_benefit values(10,'unpaid',-1410);
+insert into hb_benefit values(11,'paid',-1511);
+insert into hb_benefit values(12,'paid',-1412);
+insert into hb_benefit values(13,'paid',-1513);
+insert into hb_benefit values(14,'paid',-1414);
+insert into hb_benefit values(15,'unpaid',-1515);
+insert into hb_benefit values(16,'paid',-1416);
+insert into hb_benefit values(17,'paid',-1517);
+insert into hb_benefit values(18,'unpaid',-1418);
+insert into hb_benefit values(19,'paid',-1519);
+insert into hb_benefit values(20,'unpaid',-1420);
+insert into hb_benefit values(21,'paid',-1521);
+insert into hb_benefit values(22,'paid',-1422);
+insert into hb_benefit values(23,'paid',-1523);
+insert into hb_benefit values(24,'paid',-1424);
+
+Note:ref_id 5 has paid everything
+     ref_id 18 has not paid anything
+     

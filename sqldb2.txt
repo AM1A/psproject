@@ -1,0 +1,67 @@
+create table pinfo
+(
+ref_id integer primary key not null,
+name varchar(255),
+fname varchar(255),
+dob date,
+sex varchar(10),
+address varchar(255),
+);
+
+insert into pinfo values(0,'a','b','1-12-12','male','1-f,street-32,sector 15');
+insert into pinfo values(1,'b','c','2-12-12','male','2-f,street-32,sector 15');
+insert into pinfo values(2,'c','d','3-12-12','male','3-f,street-32,sector 15');
+insert into pinfo values(3,'d','e','4-12-12','male','4-f,street-32,sector 15');
+insert into pinfo values(4,'e','f','5-12-12','male','5-f,street-32,sector 15');
+insert into pinfo values(5,'f','g','6-12-12','male','6-f,street-32,sector 15');
+insert into pinfo values(6,'g','h','7-12-12','male','7-f,street-32,sector 15');
+insert into pinfo values(7,'h','i','8-12-12','male','8-f,street-32,sector 15');
+insert into pinfo values(8,'i','j','9-12-12','male','9-f,street-32,sector 15');
+insert into pinfo values(9,'j','k','10-12-12','male','10-f,street-32,sector 15');
+insert into pinfo values(10,'k','l','11-12-12','male','11-f,street-32,sector 15');
+insert into pinfo values(11,'l','m','12-12-12','male','12-f,street-32,sector 15');
+insert into pinfo values(12,'m','n','13-12-12','male','13-f,street-32,sector 15');
+insert into pinfo values(13,'n','o','14-12-12','male','14-f,street-32,sector 15');
+insert into pinfo values(14,'o','p','15-12-12','male','15-f,street-32,sector 15');
+insert into pinfo values(15,'p','q','16-12-12','male','16-f,street-32,sector 15');
+insert into pinfo values(16,'q','r','17-12-12','male','17-f,street-32,sector 15');
+insert into pinfo values(17,'r','s','18-12-12','male','18-f,street-32,sector 15');
+insert into pinfo values(18,'s','t','19-12-12','male','19-f,street-32,sector 15');
+insert into pinfo values(19,'t','u','20-12-12','male','20-f,street-32,sector 15');
+insert into pinfo values(20,'u','v','21-12-12','male','21-f,street-32,sector 15');
+insert into pinfo values(21,'v','w','22-12-12','male','22-f,street-32,sector 15');
+insert into pinfo values(22,'w','x','23-12-12','male','23-f,street-32,sector 15');
+insert into pinfo values(23,'x','y','24-12-12','male','24-f,street-32,sector 15');
+insert into pinfo values(24,'y','z','25-12-12','male','25-f,street-32,sector 15');
+
+create table sbiinfo
+(
+ref_id integer primary key not null,
+balance integer
+);
+
+insert into sbiinfo values(0,1400);
+insert into sbiinfo values(1,1501);
+insert into sbiinfo values(2,1402);
+insert into sbiinfo values(3,1503);
+insert into sbiinfo values(4,1404);
+insert into sbiinfo values(5,1505);
+insert into sbiinfo values(6,1406);
+insert into sbiinfo values(7,1507);
+insert into sbiinfo values(8,1408);
+insert into sbiinfo values(9,1509);
+insert into sbiinfo values(10,1410);
+insert into sbiinfo values(11,1511);
+insert into sbiinfo values(12,1412);
+insert into sbiinfo values(13,1513);
+insert into sbiinfo values(14,1414);
+insert into sbiinfo values(15,1515);
+insert into sbiinfo values(16,1416);
+insert into sbiinfo values(17,1517);
+insert into sbiinfo values(18,1418);
+insert into sbiinfo values(19,1519);
+insert into sbiinfo values(20,1420);
+insert into sbiinfo values(21,1521);
+insert into sbiinfo values(22,1422);
+insert into sbiinfo values(23,1523);
+insert into sbiinfo values(24,1424);

@@ -1,0 +1,32 @@
+create table Users
+(id int primary key,
+login_name varchar(255) character set binary,
+login_passwd varchar(255) character set binary
+);
+
+insert into Users values(0,'a','b');
+insert into Users values(1,'b','c');
+insert into Users values(2,'c','d');
+insert into Users values(3,'d','e');
+insert into Users values(4,'e','f');
+insert into Users values(5,'f','g');
+insert into Users values(6,'g','h');
+insert into Users values(7,'h','i');
+insert into Users values(8,'i','j');
+insert into Users values(9,'j','k');
+insert into Users values(10,'k','l');
+insert into Users values(11,'l','m');
+insert into Users values(12,'m','n');
+insert into Users values(13,'n','o');
+insert into Users values(14,'o','p');
+insert into Users values(15,'p','q');
+insert into Users values(16,'q','r');
+insert into Users values(17,'r','s');
+insert into Users values(18,'s','t');
+insert into Users values(19,'t','u');
+insert into Users values(20,'u','v');
+insert into Users values(21,'v','w');
+insert into Users values(22,'w','x');
+insert into Users values(23,'x','y');
+insert into Users values(24,'y','z');
+
