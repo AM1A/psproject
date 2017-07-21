@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Logout</title>
+<title>Logout page</title>
 </head>
 <body>
 <% session.invalidate(); %>
-<p>You have been successfully logout</p>
-<a href="home.jsp">Login again</a>
+<center><p style="font-family: verdana; color: crimson;">You have been successfully logged out</p></center>
+<center><a href="home.jsp">Login again</a></center>
 </body>
 </html>
